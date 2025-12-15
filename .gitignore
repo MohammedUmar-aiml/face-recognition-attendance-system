@@ -179,3 +179,27 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# ===============================
+# ML / Computer Vision specific
+# ===============================
+
+# Datasets (do not push raw images)
+data/
+datasets/
+images/
+
+# Allow small demo samples only
+!data/sample_images/
+
+# Model weights / checkpoints
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# YOLO / training outputs
+runs/
+results/
+logs/
+outputs/
