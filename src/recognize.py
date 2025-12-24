@@ -1,7 +1,8 @@
-import numpy as np
+print("Recognition module placeholder")
 
-def recognize_face(predictions, threshold=0.6):
-    max_prob = np.max(predictions)
-    if max_prob < threshold:
-        return "Unknown"
-    return np.argmax(predictions)
+def recognize_face(embedding, known_embeddings):
+    """
+    Placeholder logic for face matching.
+    In practice, distance-based matching would be used.
+    """
+    return "Unknown"
