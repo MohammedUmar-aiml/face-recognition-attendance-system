@@ -1,8 +1,15 @@
 import cv2
 import numpy as np
 
-def preprocess_image(img_path, img_size=(224, 224)):
-    img = cv2.imread(img_path)
-    img = cv2.resize(img, img_size)
-    img = img / 255.0
+def preprocess_image(img, target_size=(128, 128)):
+    """
+    Resize and normalize an input image.
+    """
+    img = cv2.resize(img, target_size)
+    img = img.astype("float32") / 255.0
     return img
+
+
+if __name__ == "__main__":
+    print("Preprocessing function defined")
+
