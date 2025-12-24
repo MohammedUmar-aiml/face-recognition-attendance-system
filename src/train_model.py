@@ -1,3 +1,7 @@
+"""
+CNN training script for face recognition attendance system.
+Demonstrates model architecture, compilation, and training flow.
+"""
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
@@ -31,3 +35,5 @@ if __name__ == "__main__":
     model = compile_model(model)
 
     print("CNN model built and compiled successfully")
+if __name__ == "__main__":
+    print("Training script ready. Dataset integration required to start training.")
